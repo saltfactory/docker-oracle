@@ -29,7 +29,7 @@ RUN ssh-keygen -q -N "" -t dsa -f /etc/ssh/ssh_host_dsa_key && ssh-keygen -q -N 
 RUN echo root:oracle | chpasswd
 RUN echo oracle:oracle | chpasswd
 
-VOLUME ['/data']
+#VOLUME ['/data']
 
 # Expose ports 22, 1521 and 8080
 EXPOSE 22
