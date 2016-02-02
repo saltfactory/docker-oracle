@@ -1,0 +1,6 @@
+app:
+  build: .
+  container_name: docker-oracle
+  ports: 
+    - "9521:1521"
+    - "9080:8080"
